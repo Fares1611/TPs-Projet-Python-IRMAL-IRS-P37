@@ -28,7 +28,7 @@ def verifier_mot_de_passe_cnil():
         if not any(char in caracteres_speciaux_a_verifier for char in mot_de_passe):
             erreurs.append(f"Le mot de passe doit contenir au moins un caractère spécial (ex: {caracteres_speciaux_a_verifier}).")
 
-        # 6. Éviter les caractères ambigus (inchangé)
+        # Éviter les caractères ambigus
         caracteres_ambigus = ['l', '1', 'i', 'I', '0', 'O']
         for char_ambigu in caracteres_ambigus:
             if char_ambigu in mot_de_passe:
