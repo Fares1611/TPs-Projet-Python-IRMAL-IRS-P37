@@ -18,7 +18,7 @@ def main():
     except ValueError: max_essais = 0
     if max_essais < 0: max_essais = 0 # Assure que max_essais n'est pas négatif
 
-    tentatives, trouve, triche_activee = 0, False, False # Initialisation groupée
+    tentatives, trouve, triche_activee = 0, False, False
     historique = []
 
     while not trouve and (max_essais == 0 or tentatives < max_essais):
@@ -31,7 +31,7 @@ def main():
 
         # Mise en place de l'option triche
         if proposition.lower() == "triche":
-            print(f"TRICHE: Mot secret = '{mot_secret}'.") # Message de triche
+            print(f"TRICHE: Mot secret = '{mot_secret}'.")
             triche_activee = True
             break
 
@@ -40,7 +40,7 @@ def main():
         else:
             print("Incorrect.")
             # Indices
-            len_p, len_s = len(proposition), len(mot_secret) # Noms de variables courts
+            len_p, len_s = len(proposition), len(mot_secret)
             print(f"Indice Longueur: {'Plus long.' if len_p < len_s else 'Plus court.' if len_p > len_s else 'Même.'}")
             
             if not proposition: print("Indice 1ère lettre: Proposition vide.")
