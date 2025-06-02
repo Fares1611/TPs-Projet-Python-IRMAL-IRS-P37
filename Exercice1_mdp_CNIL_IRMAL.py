@@ -1,3 +1,4 @@
+#Dans ce code l'utilisateur doit saisir un mot de passe dans un prompt en respectant les recommandations de la CNIL
 import string 
 
 def verifier_mot_de_passe_cnil():
