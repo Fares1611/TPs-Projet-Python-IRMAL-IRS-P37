@@ -1,3 +1,4 @@
+#Dans ce code un mot de passe avec les recommandation de la CNIL est généré automatiquement
 import random
 import string 
 
