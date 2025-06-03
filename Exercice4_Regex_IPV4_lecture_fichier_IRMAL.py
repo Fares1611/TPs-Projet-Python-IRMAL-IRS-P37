@@ -1,3 +1,4 @@
+#Dans ce code le script lis un fichier texte contenant des adresses et le script vérifie s'il respecte le format IPv4
 import re
 
 ipv4_patron = r"^(?:(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.){3}(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)$"
