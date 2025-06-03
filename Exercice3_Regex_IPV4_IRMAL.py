@@ -1,3 +1,4 @@
+#Dans ce code l'utilisateur renseigne une adresse IP dans le prompt et le script vérifie si cela respecte le format IPv4
 import re
 
 def check_ipv4():
