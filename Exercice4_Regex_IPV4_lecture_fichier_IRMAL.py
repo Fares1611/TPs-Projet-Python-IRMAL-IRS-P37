@@ -1,7 +1,7 @@
 #Dans ce code le script lis un fichier texte contenant des adresses et le script vérifie si ces adresses respectes le format IPv4
 import re
 
-ipv4_patron = r"^(?:(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.){3}(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)$"
+ipv4_patron = r"^(?:(?:0|[1-9][0-9]?|1[0-9]{2}|2[0-4][0-9]|25[0-5])\.){3}(?:0|[1-9][0-9]?|1[0-9]{2}|2[0-4][0-9]|25[0-5])$"
 
 def check_ipv4_fichier():
   try:
