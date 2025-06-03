@@ -1,3 +1,4 @@
+#Dans ce code, ont met en place un jeux pour trouvé un mot de passe (défini dans un fichier text ou liste si le fichier n'est pas présent) avec plusieurs tentative et un mode triche 
 import random
 
 def charger_mots(nom_fichier="mots_de_passe_faibles.txt"):
