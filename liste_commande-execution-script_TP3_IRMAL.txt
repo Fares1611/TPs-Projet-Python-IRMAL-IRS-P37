@@ -1,8 +1,0 @@
-#Execution script en mode mono-threads (par-défaut si l'on indique pas de threads on est en mono-threads) avec export résultat vers fichier CSV
-python TP3_Scanner_IRMAL.py --ip 172.16.3.105 --start-port 1 --end-port 200 --output resultat_scan.csv
-
-#Execution script en mode mono-threads (par-défaut si l'on indique pas de threads on est en mono-threads) avec export résultat vers fichier CSV + verbose
-python TP3_Scanner_IRMAL.py --ip 172.16.3.105 --start-port 1 --end-port 200 --output resultat_scan.csv
-
-#Execution script en mode multi-threads avec export résultat vers fichier CSV et mode verbose
-python TP3_Scanner_IRMAL.py --ip 172.16.3.105 --start-port 1 --end-port 200 --threads 30 --output resultat_scan.csv --verbose
