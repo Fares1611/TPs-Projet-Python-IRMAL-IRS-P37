@@ -1,6 +1,6 @@
 
 
-- Pour le Exercice 2, utiliser le fichier liste_ips.txt
+- Pour le Exercice 1, utiliser le fichier liste_ips.txt
 
 - Pour le TP1, utiliser le fichier mots_de_passe_faibles.txt
 
