@@ -1,0 +1,46 @@
+Jun  3 08:00:01 localhost sshd[1001]: Server listening on 0.0.0.0 port 22.
+Jun  3 08:00:01 localhost sshd[1001]: Server listening on :: port 22.
+Jun  3 08:15:22 webserver01 sshd[1022]: Accepted password for useralpha from 192.168.1.101 port 51234 ssh2
+Jun  3 08:17:05 webserver01 sshd[1025]: Failed password for useralpha from 198.51.100.1 port 11233 ssh2
+Jun  3 08:17:09 webserver01 sshd[1025]: Failed password for useralpha from 198.51.100.1 port 11235 ssh2
+Jun  3 08:17:15 webserver01 sshd[1028]: Failed password for invalid user nouser from 198.51.100.2 port 22345 ssh2
+Jun  3 08:18:01 db-primary sshd[1030]: Received disconnect from 203.0.113.45 port 33456:11: Bye Bye [preauth]
+Jun  3 08:18:02 db-primary sshd[1031]: Connection closed by 203.0.113.46 port 44567 [preauth]
+Jun  3 08:18:03 db-primary sshd[1032]: Connection closed by 203.0.113.46 [preauth]
+Jun  3 08:19:10 webserver01 sshd[1035]: Accepted publickey for userbeta from 192.168.1.102 port 52345 ssh2
+Jun  3 08:20:30 localhost sshd[1040]: Failed password for root from 198.51.100.3 port 12897 ssh2
+Jun  3 08:20:33 localhost sshd[1040]: Failed password for root from 198.51.100.3 port 12899 ssh2
+Jun  3 08:20:36 localhost sshd[1040]: Failed password for root from 198.51.100.3 port 12901 ssh2
+Jun  3 08:21:00 webserver01 sshd[1044]: Disconnected from authenticating user testuser 203.0.113.50 port 55678 [preauth]
+Jun  3 08:22:05 db-primary sshd[1048]: User restricted from 198.51.100.4 port 23901 ssh2: User restricted from 198.51.100.4 not allowed because not listed in AllowUsers
+Jun  3 08:23:15 localhost sshd[1052]: User banned from 198.51.100.5 port 34912 ssh2: User banned from 198.51.100.5 not allowed because listed in DenyUsers
+Jun  3 08:24:45 webserver01 sshd[1058]: User olduser from 203.0.113.55 port 45923 ssh2: User olduser from 203.0.113.55 not allowed because password expired
+Jun  3 08:25:50 db-primary sshd[1062]: User locked from 198.51.100.6 port 56934 ssh2: User locked from 198.51.100.6 not allowed because account is locked
+Jun  3 08:26:10 localhost sshd[1065]: Invalid user hackerman from 203.0.113.60 port 12321 ssh2
+Jun  3 08:26:12 localhost sshd[1066]: Failed password for invalid user hackerman from 203.0.113.60 port 12323 ssh2
+Jun  3 08:27:00 webserver01 sshd[1070]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=198.51.100.7 user=attacker
+Jun  3 08:27:05 webserver01 sshd[1071]: Failed password for attacker from 198.51.100.7 port 23432 ssh2
+Jun  3 08:28:00 db-primary sshd[1075]: pam_unix(sshd:auth): check pass; user unknown
+Jun  3 08:28:01 db-primary sshd[1076]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=203.0.113.70
+Jun  3 08:28:02 db-primary sshd[1077]: Failed password for invalid user serviceacc from 203.0.113.70 port 33445 ssh2
+Jun  3 08:30:00 webserver01 sshd[1080]: Received SIGHUP; restarting.
+Jun  3 08:30:01 webserver01 sshd[1100]: Server listening on 0.0.0.0 port 22.
+Jun  3 08:30:01 webserver01 sshd[1100]: Server listening on :: port 22.
+Jun  3 09:05:10 localhost systemd-logind[700]: New session 1 of user useralpha.
+Jun  3 09:10:15 localhost CRON[1202]: pam_unix(cron:session): session opened for user root by (uid=0)
+Jun  3 09:10:15 localhost CRON[1202]: pam_unix(cron:session): session closed for user root
+Jun  3 09:17:02 webserver01 su[1230]: Successful su for usergamma by root
+Jun  3 09:17:02 webserver01 su[1230]: + /dev/pts/0 root:usergamma
+Jun  3 09:17:02 webserver01 su[1230]: pam_unix(su:session): session opened for user usergamma by root(uid=0)
+Jun  3 10:00:00 mal-serv sshd[3001]: Failed password for root from 103.208.220.101 port 12345 ssh2
+Jun  3 10:00:05 mal-serv sshd[3002]: Failed password for admin from 218.92.0.31 port 22222 ssh2
+Jun  3 10:00:10 mal-serv sshd[3003]: Failed password for user from 103.208.220.101 port 34567 ssh2
+45.137.21.100 - - [03/Jun/2025:11:05:00 +0200] "GET /exploit.php HTTP/1.1" 200 150 "ShellBot/1.0 (mimicking scanner; an nmap like tool)" "http://example.com/refer"
+45.137.21.101 - - [03/Jun/2025:11:05:05 +0200] "POST /data_collector HTTP/1.0" 200 50 "DataStealerPro/3.0 (compatible; masscan variant)" "-"
+218.92.0.31 - - [03/Jun/2025:11:05:07 +0200] "GET /phpmyadmin/scripts/setup.php HTTP/1.1" 404 1998 "ZmEu" "-"
+103.208.220.101 - - [03/Jun/2025:11:05:10 +0200] "CONNECT proxy.server:8080 HTTP/1.1" 502 0 "Anonymous Proxy Scanner/2.1 (dotbot like behavior)" "-"
+45.137.21.100 - - [03/Jun/2025:11:05:15 +0200] "HEAD /admin HTTP/1.1" 403 100 "Nikto/2.5" "-"
+198.51.100.1 - - [03/Jun/2025:11:05:20 +0200] "GET /?XDEBUG_SESSION_START=phpstorm HTTP/1.1" 200 1234 "Mozilla/5.0 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)" "-"
+Jun  3 11:06:00 webserver01 sshd[1200]: error: Received disconnect from 198.51.100.80 port 50123:3: com.jcraft.jsch.JSchException: Auth fail [preauth]
+Jun  3 11:06:05 db-primary sshd[1201]: error: kex_exchange_identification: Connection closed by remote host
+Jun  3 11:06:05 db-primary sshd[1201]: Connection closed by 198.51.100.81 port 50124 [preauth]
